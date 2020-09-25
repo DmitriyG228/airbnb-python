@@ -216,8 +216,6 @@ class Api(object):
             '_format': 'for_mobile_client',
         }
 
-        print(self._session.headers)
-
         r = self._session.get(API_URL + "/reviews", params=params,timeout=timeout)
         r.raise_for_status()
 
